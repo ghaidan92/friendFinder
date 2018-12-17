@@ -1,0 +1,23 @@
+{
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghaidan92/friendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghaidan92/friendFinder/issues"
+  },
+  "homepage": "https://github.com/ghaidan92/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
