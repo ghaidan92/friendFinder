@@ -9,39 +9,34 @@ app.get("/api/friends", function(req, res) {
   });
 
   app.post("/api/friends", function(req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body parsing middleware
+    var newFriend = req.body;
+    function calculateDiff(num1, num2){
+      return Math.abs(num1 - num2)
+    }
+    var allScoreArray = [];
+    for (var i=0; i<friends.length; i++){
+      for (var j=0; j<friends[i].score.length; j++){
+        allScoreArray.push(calculateDiff(newFriend.score[j] , friends[i].score[j]));
+      }    
+    }
+    // friends.push(newFriends);
+		// res.json(friends);
+		
+    // console.log(allScoreArray);
+    var allScoreSmallArrays = [];
+    var breakPoint = 10;
+    for (var i=0; i < allScoreArray.length; i+= breakPoint){
+      var smallerArray = allScoreArray.slice(i, i + breakPoint);
+      console.log(smallerArray);
+      allScoreSmallArrays.push(smallerArray);
+    }
+
+    var finalArray = [],
+    //calculate all arrays
     
-    var newFriends = req.body;
-    console.log(newFriends);
-    friends.push(newFriends);
-		res.json(friends);
-		
-
-		//loop through the friends data array of objects to get each friends scores
-		// for(var i = 0; i < friends.length; i++){
-    //   console.log(friends[i].name);
-    //   console.log(friends[i].photo);
-    //   console.log(friends[i].score);
-    //   for(var j = 0; j < 2; j++){
-    //     function caluculate(num1, num2){
-    //       return Math.abs(num1 - num2)
-    //     }
-        
-        
-        
-    //     var result = caluculate(newFriends, friends[i]);
-        
-    //     console.log(result);
-    //   }
-		
-
-		// 	//loop through that friends score and the users score and calculate the 
-		// 	// absolute difference between the two and push that to the total difference variable set above
-		// }
-
-		
-    
+    //smallest array is my friend
+    //index of smallest array is friend
+    // console.log(allScoreSmallArrays);
 	});
 
 }

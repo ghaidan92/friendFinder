@@ -47,9 +47,24 @@ var friends = [
             2,
             4
         ]
+    },
+    {
+        name: "Ahmed",
+        photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBgjEuBiheyCvpEWXSZr550b0wwZ8bjyAn2-kL80o8A0u_0nkHQ",
+        score: [
+            5,
+            3,
+            2,
+            2,
+            3,
+            3,
+            2,
+            3,
+            2,
+            4
+        ]
     }
 ];
-
 
 
 
