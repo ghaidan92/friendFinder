@@ -50,7 +50,7 @@ var friends = [
     },
     {
         name: "alan",
-        photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBgjEuBiheyCvpEWXSZr550b0wwZ8bjyAn2-kL80o8A0u_0nkHQ",
+        photo: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/701/12-google-less-1492536824.jpg?resize=480:*",
         score: [
             3,
             2,
