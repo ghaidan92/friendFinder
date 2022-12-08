@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/ghaidan92/friendFinder#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   }
 }
